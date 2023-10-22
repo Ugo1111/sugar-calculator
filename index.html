@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grams to Tablespoons Converter</title>
+  <script>
+    function convertGramsToTablespoons() {
+      const conversionRate = 15.625;
+      const grams = parseFloat(document.getElementById("gramsInput").value);
+      const tablespoons = grams / conversionRate;
+      document.getElementById("result").textContent = grams + " grams is equal to " + tablespoons + " tablespoons of sugar.";
+    }
+  </script>
+</head>
+<body>
+  <h1>Grams to Tablespoons Converter</h1>
+  <form>
+    <label for="gramsInput">Enter Grams: </label>
+    <input type="text" id="gramsInput">
+    <input type="button" value="Convert" onclick="convertGramsToTablespoons()">
+  </form>
+  <p id="result"></p>
+</body>
+</html>
